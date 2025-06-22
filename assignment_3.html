@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Styled Box</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .styled-box {
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      border: 2px solid #3b82f6;
+      border-radius: 16px;
+      padding: 40px 30px;
+      margin: 20px;
+      width: 320px;
+      text-align: center;
+      color: #1e3a8a;
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.4s ease;
+      transform: scale(1);
+    }
+
+    .styled-box:hover {
+      background: linear-gradient(135deg, #93c5fd, #bfdbfe);
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
+      transform: scale(1.05);
+      cursor: pointer;
+      height: 100px;
+    }
+
+    .styled-box h2 {
+      margin-top: 0;
+      font-size: 2styled;
+    }
+    .styled-box p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="styled-box">
+    <h2>Hello , I am a Styled box</h2>
+    <p>Hover me for a surprise touch!</p>
+  </div>
+
+</body>
+</html>
