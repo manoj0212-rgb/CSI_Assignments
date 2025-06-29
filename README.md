@@ -12,3 +12,6 @@ Assignment-2 :- I have to create a simple HTML table with 3 rows and 3 columns w
 Assignment-3 :- I have to create a styled box with background-color , border , font , margin and padding.
 
 
+Assignment-4 :- I have to create a responsive page in which different sections and a side bar and this assignments consist a html file(assignment_4.html) and a css file (style_4.css).
+
+
