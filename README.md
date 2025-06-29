@@ -1,17 +1,59 @@
 # CSI_Assignments
-Intern at Celebal Technologies. 
-There are assignments that are given to me through the internship.
 
+👨‍💻 **Intern at Celebal Technologies**  
+These are the HTML & CSS assignments given to me during my internship at Celebal Technologies as part of the CSI program.
 
-Assignment-1 :- I have to Create a user registration form with the following fields: username, email, password, birthdate, address, and phone number. It should also have a submit and cancel button. Using HTML only.
+---
 
+## 📚 Assignments Overview
 
-Assignment-2 :- I have to create a simple HTML table with 3 rows and 3 columns with column headings Name , Age and City and fill cell deatail.
+### 🔹 Assignment 1: User Registration Form
+- **Description**: Created a basic user registration form using only HTML.
+- **Fields**:
+  - Username
+  - Email
+  - Password
+  - Birthdate
+  - Address
+  - Phone number
+- **Buttons**: Submit and Cancel
+- **File**: `assignment_1.html`
 
+---
 
-Assignment-3 :- I have to create a styled box with background-color , border , font , margin and padding.
+### 🔹 Assignment 2: HTML Table
+- **Description**: Created a simple HTML table with 3 rows and 3 columns.
+- **Columns**:
+  - Name
+  - Age
+  - City
+- **File**: `assignment_2.html`
 
+---
 
-Assignment-4 :- I have to create a responsive page in which different sections and a side bar and this assignments consist a html file(assignment_4.html) and a css file (style_4.css).
+### 🔹 Assignment 3: Styled Box
+- **Description**: Designed a box using basic CSS properties.
+- **Styles Used**:
+  - Background Color
+  - Border
+  - Font Style
+  - Margin
+  - Padding
+- **File**: `assignment_3.html`
+
+---
+
+### 🔹 Assignment 4: Responsive Web Page with Sidebar
+- **Description**: Built a responsive HTML layout with multiple content sections and a sidebar using Flexbox and Grid.
+- **Features**:
+  - Sticky header
+  - Collapsible sidebar for mobile
+  - Smooth scrolling navigation
+  - Responsive design with media queries
+- **Files**:
+  - HTML: `assignment_4.html`
+  - CSS: `style_4.css`
+
+---
 
 
