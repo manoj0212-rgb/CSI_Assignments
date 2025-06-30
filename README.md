@@ -19,6 +19,8 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
 - **Buttons**: Submit and Cancel
 - **File**: `assignment_1.html`
 
+![Assignment 1 Screenshot](screenshots/assignment_1_ss.png)
+
 ---
 
 ### 🔹 Assignment 2: HTML Table
@@ -28,6 +30,8 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
   - Age
   - City
 - **File**: `assignment_2.html`
+
+- ![Assignment 1 Screenshot](screenshots/assignment_2_ss.png)
 
 ---
 
@@ -41,6 +45,8 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
   - Padding
 - **File**: `assignment_3.html`
 
+![Assignment 1 Screenshot](screenshots/assignment_3_ss.png)
+
 ---
 
 ### 🔹 Assignment 4: Responsive Web Page with Sidebar
@@ -53,6 +59,8 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
 - **Files**:
   - HTML: `assignment_4.html`
   - CSS: `style_4.css`
+
+![Assignment 1 Screenshot](screenshots/assignment_4_ss.png)
 
 ---
 
