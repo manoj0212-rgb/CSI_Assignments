@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theme Toggle with Rainy Theme</title>
+  <style>
+    :root {
+      --default-bg: #ffffff;
+      --default-text: #333;
+
+      --dark-bg: #1e1e1e;
+      --dark-text: #f4f4f4;
+
+      --sky-bg: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      --sky-text: #003366;
+
+      --sunny-bg: linear-gradient(to right, #fff176, #ffb74d);
+      --sunny-text: #8a4b00;
+
+      --rainy-bg: linear-gradient(to right, #4d83da, #57caff); /* cool blue tones */
+      --rainy-text: #00334d;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: var(--default-bg);
+      color: var(--default-text);
+      transition: background 0.6s ease, color 0.6s ease;
+    }
+
+    .dark-theme {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+
+    .sky-theme {
+      background: var(--sky-bg);
+      color: var(--sky-text);
+    }
+
+    .sunny-theme {
+      background: var(--sunny-bg);
+      color: var(--sunny-text);
+    }
+
+    .rainy-theme {
+      background: var(--rainy-bg);
+      color: var(--rainy-text);
+    }
+
+    .animated-btn {
+      padding: 15px 30px;
+      font-size: 16px;
+      margin: 10px;
+      color: white;
+      background-color: #007BFF;
+      border: 2px solid #007BFF;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+      animation: pulse 2s infinite;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+
+    .animated-btn:hover {
+      background-color: white;
+      color: #007BFF;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.5);
+      }
+      70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+      }
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="animated-btn" id="darkBtn">🌙 Dark Theme</button>
+  <button class="animated-btn" id="skyBtn">🌤 Sky Theme</button>
+  <button class="animated-btn" id="sunnyBtn">☀️ Sunny Theme</button>
+  <button class="animated-btn" id="rainyBtn">🌧️ Rainy Theme</button>
+
+  <div id="message">Theme switched!</div>
+
+  <script>
+    const body = document.body;
+    const message = document.getElementById("message");
+
+    const darkBtn = document.getElementById("darkBtn");
+    const skyBtn = document.getElementById("skyBtn");
+    const sunnyBtn = document.getElementById("sunnyBtn");
+    const rainyBtn = document.getElementById("rainyBtn");
+
+    let activeTheme = null;
+
+    function showMessage(text) {
+      message.textContent = text;
+      message.style.display = "block";
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 2000);
+    }
+
+    function resetButtonLabels() {
+      darkBtn.textContent = "🌙 Dark Theme";
+      skyBtn.textContent = "🌤 Sky Theme";
+      sunnyBtn.textContent = "☀️ Sunny Theme";
+      rainyBtn.textContent = "🌧️ Rainy Theme";
+    }
+
+    function applyTheme(theme, button, label, emoji) {
+      if (activeTheme === theme) {
+        body.classList.remove(theme);
+        activeTheme = null;
+        button.textContent = `${emoji} ${label}`;
+        showMessage("🔁 Back to Normal Theme");
+      } else {
+        body.classList.remove("dark-theme", "sky-theme", "sunny-theme", "rainy-theme");
+        body.classList.add(theme);
+        activeTheme = theme;
+        resetButtonLabels();
+        button.textContent = "🔁 To Normal Theme";
+        showMessage(`${emoji} ${label} Applied`);
+      }
+    }
+
+    darkBtn.addEventListener("click", () => {
+      applyTheme("dark-theme", darkBtn, "Dark Theme", "🌙");
+    });
+
+    skyBtn.addEventListener("click", () => {
+      applyTheme("sky-theme", skyBtn, "Sky Theme", "🌤");
+    });
+
+    sunnyBtn.addEventListener("click", () => {
+      applyTheme("sunny-theme", sunnyBtn, "Sunny Theme", "☀️");
+    });
+
+    rainyBtn.addEventListener("click", () => {
+      applyTheme("rainy-theme", rainyBtn, "Rainy Theme", "🌧️");
+    });
+  </script>
+
+</body>
+</html>
