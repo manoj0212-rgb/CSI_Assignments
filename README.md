@@ -31,7 +31,7 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
   - City
 - **File**: `assignment_2.html`
 
-- ![Assignment 1 Screenshot](screenshots/assignment_2_ss.png)
+- ![Assignment 2 Screenshot](screenshots/assignment_2_ss.png)
 
 ---
 
@@ -45,7 +45,7 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
   - Padding
 - **File**: `assignment_3.html`
 
-![Assignment 1 Screenshot](screenshots/assignment_3_ss.png)
+![Assignment 3 Screenshot](screenshots/assignment_3_ss.png)
 
 ---
 
@@ -60,8 +60,41 @@ These are the HTML & CSS assignments given to me during my internship at Celebal
   - HTML: `assignment_4.html`
   - CSS: `style_4.css`
 
-![Assignment 1 Screenshot](screenshots/assignment_4_ss.png)
+![Assignment 4 Screenshot](screenshots/assignment_4_ss.png)
 
 ---
+
+### 🔸 Assignment 5: Animated Theme Toggle Buttons
+
+## 📌 Description
+This project showcases **animated and interactive buttons** that allow users to switch between different background themes with smooth transitions and live visual effects.
+
+Each theme comes with unique CSS animations (like raindrops, clouds, or sun rays) that enhance the user experience while practicing DOM manipulation, CSS transitions, and responsive interactivity.
+
+---
+
+## ✨ Features
+
+- 🌙 **Dark Theme**
+- 🌤 **Sky Theme** 
+- ☀️ **Sunny Theme** 
+- 🌧️ **Rainy Theme** 
+- 🔁 Toggle back to default (white) theme by pressing the same button
+- 🎨 CSS animations and keyframes for each effect
+- 🚀 Smooth button transitions and pulse animation
+
+## 📁 Files Included
+
+  assignment_5.html - Main HTML file with theme toggle buttons         
+  Inline CSS/JS     - CSS and JavaScript are embedded within the HTML  
+  screenshots/      - Folder with visual previews of each theme        
+
+## 🖼️ Preview
+
+Add these image files inside a `screenshots/` folder and refer to them like this:
+
+![Assignment 5.1 Screenshot](screenshots/assignment_5_ss(1).png)
+![Assignment 5.2 Screenshot](screenshots/assignment_5_ss(2).png)
+![Assignment 5.3 Screenshot](screenshots/assignment_5_ss(3).png)
 
 
