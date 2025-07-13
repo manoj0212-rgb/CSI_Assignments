@@ -112,9 +112,9 @@ This assignment demonstrates a JavaScript function `first()` that:
 
 ## 🧪 Sample Outputs
 javascript
-first([7, 9, 0, -2])      // 7
-first([], 3)             // []
-first([7, 9, 0, -2], 3)  // [7, 9, 0]
+-first([7,9,0,-2])          // 7
+-first([], 3)               // []
+-first([7, 9, 0,-2], 3)    // [7, 9, 0]
 
 ## 🖼️ Screenshot:
 
