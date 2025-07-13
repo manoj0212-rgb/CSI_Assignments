@@ -71,8 +71,6 @@ This project showcases **animated and interactive buttons** that allow users to 
 
 Each theme comes with unique CSS animations (like raindrops, clouds, or sun rays) that enhance the user experience while practicing DOM manipulation, CSS transitions, and responsive interactivity.
 
----
-
 ## ✨ Features
 
 - 🌙 **Dark Theme**
@@ -97,4 +95,29 @@ Add these image files inside a `screenshots/` folder and refer to them like this
 ![Assignment 5.2 Screenshot](screenshots/assignment_5_ss(2).png)
 ![Assignment 5.3 Screenshot](screenshots/assignment_5_ss(3).png)
 
+---
 
+###🔹 Assignment 6: JS Array `first()` Function
+
+## 📌 Description
+This assignment demonstrates a JavaScript function `first()` that:
+- Returns the first element of an array.
+- If `n` is passed, returns the first `n` elements.
+- Handles edge cases like empty arrays and negative `n`.
+
+## 🖥️ How to Use
+1. Open `assignment_6.html` in any browser.
+2. Read the instructions shown on the page.
+3. Open the **Console tab** (F12 or Ctrl+Shift+I) to see results.
+
+## 🧪 Sample Outputs
+javascript
+first([7, 9, 0, -2])      // 7
+first([], 3)             // []
+first([7, 9, 0, -2], 3)  // [7, 9, 0]
+
+## 🖼️ Screenshot:
+
+Below is the screenshot showing the web page and console output:
+
+![Assignment 6 Screenshot](screenshots/assignment_6_ss.png)
