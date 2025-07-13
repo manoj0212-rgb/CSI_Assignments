@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript First Function</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+    <h2>👋 Welcome!</h2>
+  <p>This page demonstrates a JavaScript function that returns the <strong>first element</strong> or the <strong>first 'n' elements</strong> of an array.</p>
+  <p><strong>➡️ To see the output:</strong> Open your browser's <em>Developer Tools</em> (press <code>F12</code> or <code>Ctrl+Shift+I</code>) and go to the <strong>Console</strong> tab.</p>
+
+  <script>
+    function first(arr, n) {
+      if (arr == null) return [];
+
+      if (n == null) return arr[0];
+
+      if (n < 0) return [];
+
+      return arr.slice(0, n);
+    }
+
+    console.clear();
+
+
+    console.log("1. The first element in [7, 9, 0, -2] is:");
+    console.log(first([7, 9, 0, -2]));          
+
+    console.log("2. First 3 elements in an empty array []:");
+    console.log(first([], 3));                 
+
+    console.log("3. First 3 elements in [7, 9, 0, -2]:");
+    console.log(first([7, 9, 0, -2], 3));      
+
+    console.log("4. First 6 elements in [7, 9, 0, -2] (more than array size):");
+    console.log(first([7, 9, 0, -2], 6));       
+
+    console.log("5. First -3 elements in [7, 9, 0, -2] (invalid):");
+    console.log(first([7, 9, 0, -2], -3));     
+
+  </script>
+</body>
+</html>
