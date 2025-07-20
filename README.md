@@ -121,3 +121,41 @@ javascript
 Below is the screenshot showing the web page and console output:
 
 ![Assignment 6 Screenshot](screenshots/assignment_6_ss.png)
+
+---
+
+### 🔸 Assignment 7: JavaScript Array & String Exercises
+
+### 📄 Description:
+This assignment covers multiple basic JavaScript tasks related to arrays and strings, including joining arrays, finding frequent elements, string manipulation, and filtering.
+
+---
+
+### ✅ Tasks Implemented:
+1. **Join Elements** – Join all elements of an array into strings using `.join()`.
+2. **Find Most Frequent Element** – Count and display the most frequent item in an array.
+3. **Truncate String** – Cut a string to a given number of characters.
+4. **Capitalize Words** – Convert each word’s first letter to uppercase.
+5. **Filter Between** – Return array elements between two given numbers.
+
+---
+
+### 🧪 Test Data & Expected Output:
+js
+console.log(myColor.join());              // "Red,Green,White,Black"
+console.log(myColor.join('+'));           // "Red+Green+White+Black"
+
+console.log(`${mostFrequent} (${maxFreq} times)`); // a (5 times)
+
+console.log(truncateString("Robin Singh", 4));     // "Robi"
+
+console.log(capitalizeWords('js string exercises')); // "Js String Exercises"
+
+console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7]));    // [5, 4, 7]
+
+
+## 🖼️ Screenshot:
+
+Below is the screenshot showing the web page and console output:
+
+![Assignment 7 Screenshot](screenshots/assignment_7_ss.png)
