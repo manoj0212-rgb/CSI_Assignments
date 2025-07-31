@@ -1,0 +1,64 @@
+
+### 📄 **Git Assignment – Commands Only**
+
+---
+
+✅ 1.Stage all changes and commit them
+
+git add .
+git commit -m "Your meaningful commit message"
+
+
+✅ 2.Move commits from the wrong branch to the correct branch
+
+git checkout -b correct-branch        # Create and switch to correct branch
+git checkout wrong-branch
+git reset --hard HEAD~n               # Remove last n commits
+
+
+✅ 3.Create a new branch, commit changes, and push to GitHub
+
+git checkout -b new-feature
+git add .
+git commit -m "Feature added"
+git push -u origin new-feature
+
+✅ 4.Fork, contribute, and create a Pull Request
+
+- From GitHub UI: Fork the repo
+cd project
+git checkout -b your-feature
+- Make changes
+git add .
+git commit -m "Contribute feature"
+git push origin your-feature
+- From GitHub UI: Open Pull Request
+
+✅ 5.Resolve merge conflicts
+
+git checkout main
+git pull origin main
+git checkout your-branch
+git merge main
+- Fix conflicts manually, then:
+git add .
+git commit -m "Resolved merge conflicts"
+
+✅ 6.Create a feature branch from updated main
+
+git checkout main
+git pull origin main
+git checkout -b feature-branch
+
+✅ 7.Revert to a specific commit and discard later ones
+
+git log                           # Get the commit hash
+git reset --hard <commit-hash>
+
+
+✅ 8.Restore a deleted file from previous commit
+
+git checkout HEAD^ -- path/to/file
+git add path/to/file
+git commit -m "Restore deleted file"
+
