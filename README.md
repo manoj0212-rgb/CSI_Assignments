@@ -159,3 +159,18 @@ console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7]));    // [5, 4, 7]
 Below is the screenshot showing the web page and console output:
 
 ![Assignment 7 Screenshot](screenshots/assignment_7_ss.png)
+
+---
+
+### 🔸Assignment 8 – Git Commands
+
+1. Stage all changes and commit  
+2. Move commits to correct branch  
+3. Create branch, commit, and push  
+4. Fork, change, and pull request  
+5. Resolve merge conflicts  
+6. Create feature branch from updated main  
+7. Revert to specific commit  
+8. Restore deleted file
+
+---
